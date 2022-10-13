@@ -11,16 +11,16 @@ pipeline {
 		sh 'cat Jenkins*
             }
         }
-        stage('Build Image') {
-            steps {
-		sh 'docker build -t jenkinspipeline .'
-            }
-        }
-	stage('Docker Login') {
-            steps {
-		sh 'docker login'
-            }
-        }
+//         stage('Build Image') {
+//             steps {
+// 		sh 'docker build -t jenkinspipeline .'
+//             }
+//         }
+// 	stage('Docker Login') {
+//             steps {
+// 		sh 'docker login'
+//             }
+//         }
 //         stage('Docker Login') {
 //             steps {
 //                 //sh 'docker login -u $DOCKERHUB_CREDS_USR -p $DOCKERHUB_CREDS_PSW' (this will leave the password visible)
