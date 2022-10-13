@@ -8,8 +8,8 @@ pipeline {
             steps {
                 checkout scm
                 sh 'ls *'
-		sh 'cat Jenkins*
-            }
+// 		sh 'cat Jenkins*
+	    }
         }
 //         stage('Build Image') {
 //             steps {
